@@ -1,0 +1,115 @@
+/* This is a stylesheet */
+
+/*@import();*/
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css?family=Lobster+Two");
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color:azure;
+    min-height: 100%;
+    font-family: sans-serif;
+    font-size: 16px;
+/*    border: 5px solid black;*/
+/*    overflow:hidden;*/
+}
+
+.content-wrapper{
+    position: relative;
+    width: 95%;
+     margin: 2.5%;
+}
+
+.nav-content-wrapper{
+    position: relative;
+    width: 50%;
+/*    margin: 4% 10% 5% 10%;*/
+    display: inline-block;
+    height: 300px;
+    overflow: hidden;
+    vertical-align: middle;
+    padding: 10px;
+}
+.nav-content-wrapper img{
+    width:100%;
+/*    height:100%;*/
+    
+}
+
+.nav-content-wrapper .text-wrap{
+    left:50%;
+    top:20%;
+    
+        
+    
+}
+.nav-content-wrapper .text-wrap a{
+    color: #000;
+    background-color: azure;
+    padding: 10px
+    
+}
+
+.content-wrapper img{
+    width:100%;
+}
+
+.text-wrap{
+/*    border: 2px solid red;*/
+    width:100%;
+    position: absolute;
+    top: 20%;
+    left: 0;
+}
+
+.text-wrap h1{
+    text-align: center;
+    color: #ffffff;
+    font-size: 10vw;
+    font-family: 'lobster' , cursive;
+}
+
+/*img {*/
+/*    max-height: 100%;*/
+/*    max-width: 100%;*/
+
+
+a {
+    color: #940000;
+/* all links are dark red, easier than going through and targeting each attribute individually */
+}
+
+/* header styles */
+header {
+    align-self: center;
+/*    max-width: 1154px;*/
+}
+header h2 {
+    width: 30%;
+    float; right:auto;
+}
+
+
+.intext-img {
+   height:100px;
+    width:50%;
+}
+
+
+/* changes two columns into one for navigation on home page*/
+@media screen and (max-device-width: 970px){
+    .nav-content-wrapper{
+        width:100%;
+    }
+    
+}
+
